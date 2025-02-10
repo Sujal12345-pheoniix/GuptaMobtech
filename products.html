@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Gupta Mobile Centre</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar (same as index.html) -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.jpg" alt="Gupta Mobile Centre Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <!-- Product Categories -->
+
+    <div class="category-filter">
+        <button class="filter-btn active" data-category="all">All Products</button>
+        <button class="filter-btn" data-category="earbuds">Earbuds</button>
+        <button class="filter-btn" data-category="headphones">Headphones</button>
+        <button class="filter-btn" data-category="chargers">Chargers</button>
+        <button class="filter-btn" data-category="speakers">Speakers</button>
+        <button class="filter-btn" data-category="glass">Tempered Glass</button>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="products-page">
+        <div class="product-grid">
+            <!-- Earbuds Products -->
+            <div class="product-card" data-category="earbuds">
+                <div class="product-badge">New</div>
+                <img src="images/earbuds.jpg" alt="Wireless Earbuds">
+                <h3>Premium Wireless Earbuds</h3>
+                <p>High-quality wireless earbuds with noise cancellation</p>
+                <span class="price">₹499</span>
+                <a href="/" class="buy-now">Buy Now</a>
+            </div>
+
+            <div class="product-card" data-category="earbuds">
+                <img src="images/earbud2.webp" alt="Wireless Earbuds Pro">
+                <h3>Wireless Earbuds Pro</h3>
+                <p>Premium sound quality with active noise cancellation</p>
+                <span class="price">₹599</span>
+                <a href="/" class="buy-now">Buy Now</a>
+            </div>
+
+            <div class="product-card" data-category="earbuds">
+                <img src="images/earbud3.webp" alt="Sport Earbuds">
+                <h3>Sport Wireless Earbuds</h3>
+                <p>Sweat-resistant earbuds perfect for workouts</p>
+                <span class="price">Rs. 1200</span>
+                <a href="/" class="buy-now">Buy Now</a>
+            </div>
+
+            <!-- Charger Products -->
+            <div class="product-card" data-category="chargers">
+                <img src="images/charger.jpg" alt="Fast Charger">
+                <h3>Quick Charge Adapter</h3>
+                <p>65W fast charging solution for all devices</p>
+                <span class="price">Rs. 700</span>
+                <a href="/" class="buy-now">Buy Now</a>
+            </div>
+
+            <div class="product-card" data-category="chargers">
+                <img src="images/charger2.webp" alt="Wireless Charger">
+                <h3>Wireless Charging Pad</h3>
+                <p>15W wireless charging for smartphones</p>
+                <span class="price">Rs. 650</span>
+                <a href="/" class="buy-now">Buy Now</a>
+            </div>
+
+            <!-- Speaker Products -->
+            <div class="product-card" data-category="speakers">
+                <img src="images/speaker.jpeg" alt="Bluetooth Speaker">
+                <h3>Portable Bluetooth Speaker</h3>
+                <p>Powerful sound in a compact design</p>
+                <span class="price">Rs 999</span>
+                <a href="/" class="buy-now">Buy Now</a>
+            </div>
+
+
+            <div class="product-card" data-category="speakers">
+                <img src="images/speaker2.webp" alt="Party Speaker">
+                <h3>Party Speaker System</h3>
+                <p>High-power speaker with LED lights</p>
+                <span class="price">Rs.1499</span>
+                <a href="/" class="buy-now">Buy Now</a>
+
+
+            </div>
+
+            <!-- Tempered Glass Products -->
+            <div class="product-card" data-category="glass">
+                <img src="images/temper.jpg" alt="Phone Screen Protector">
+                <h3>Premium Screen Guard</h3>
+                <p>9H hardness tempered glass protection</p>
+                <span class="price">Rs.99</span>
+                <a href="/" class="buy-now">Buy Now</a>
+            </div>
+
+
+            <div class="product-card" data-category="glass">
+                <img src="images/temper2.webp" alt="Privacy Screen Guard">
+                <h3>Privacy Screen Protector</h3>
+                <p>Anti-spy tempered glass shield</p>
+                <span class="price">Rs.199 </span>
+                <a href="/" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
