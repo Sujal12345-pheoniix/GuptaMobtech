@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +6,12 @@
 }
 
 body {
-    padding-top: 70px; /* Adjust this value based on your navbar height */
+    padding-top: 70px; 
     margin: 0;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
 
-/* Navigation Styles */
 nav {
     position: fixed;
     top: 0;
@@ -20,7 +19,7 @@ nav {
     width: 100%;
     background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    z-index: 1000; /* Ensures nav stays above other content */
+    z-index: 1000; 
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -30,14 +29,15 @@ nav {
 
 nav.nav-scrolled {
     padding: 0.5rem 1rem;
-    background: rgba(74, 144, 226, 0.95); /* semi-transparent version of primary color */
+    background: rgba(74, 144, 226, 0.95); 
+    
     backdrop-filter: blur(10px);
 }
 
 .logo {
     display: flex;
     align-items: center;
-    background: white; /* Add white background to logo container */
+    background: white; 
     padding: 5px 10px;
     border-radius: 8px;
 }
@@ -48,13 +48,13 @@ nav.nav-scrolled {
     object-fit: contain;
 }
 
-/* Add hover effect */
+
 .logo:hover {
     transform: scale(1.02);
     transition: transform 0.3s ease;
 }
 
-/* Ensure logo remains visible on mobile */
+
 @media (max-width: 768px) {
     .logo img {
         height: 40px;
@@ -113,7 +113,7 @@ nav.nav-scrolled {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    background: rgba(0, 0, 0, 0.5); 
 }
 
 .hero-content {
@@ -223,7 +223,7 @@ nav.nav-scrolled {
 .buy-now {
     display: inline-block;
     padding: 12px 25px;
-    background: #25D366; /* WhatsApp green color */
+    background: #25D366; 
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -239,7 +239,7 @@ nav.nav-scrolled {
 }
 
 .buy-now:hover {
-    background: #128C7E; /* Darker WhatsApp green on hover */
+    background: #128C7E; 
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
@@ -260,7 +260,7 @@ nav.nav-scrolled {
     margin: 10px 0;
 }
 
-/* Footer Styles */
+
 footer {
     background-color: #333;
     color: white;
@@ -287,7 +287,7 @@ footer {
     border-top: 1px solid #555;
 }
 
-/* Category Filter Styles */
+
 .category-filter {
     display: flex;
     justify-content: center;
@@ -312,7 +312,7 @@ footer {
     color: white;
 }
 
-/* Cart Icon Updates */
+
 .cart-icon {
     position: relative;
 }
@@ -328,7 +328,7 @@ footer {
     font-size: 0.8rem;
 }
 
-/* Animation Classes */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -338,7 +338,7 @@ footer {
     animation: fadeIn 0.5s ease-out forwards;
 }
 
-/* Add these new styles to your existing CSS */
+
 
 :root {
     --primary-color: #4a90e2;
@@ -348,7 +348,6 @@ footer {
     --light-color: #f8f9fa;
 }
 
-/* About Page Styles */
 .about-hero {
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/about-bg.jpg');
     height: 40vh;
@@ -358,8 +357,8 @@ footer {
     justify-content: center;
     text-align: center;
     color: white;
-    margin-top: -70px; /* Negative margin to offset body padding */
-    padding-top: 70px; /* Add padding to prevent content from hiding under nav */
+    margin-top: -70px; 
+    padding-top: 70px; 
 }
 
 .about-grid {
@@ -382,7 +381,6 @@ footer {
     transform: translateY(-10px);
 }
 
-/* Contact Page Styles */
 .contact-section {
     padding: 4rem 2rem;
 }
@@ -419,7 +417,7 @@ footer {
     border-radius: 5px;
 }
 
-/* Cart Page Styles */
+
 .cart-section {
     padding: 2rem;
     max-width: 1200px;
@@ -472,14 +470,14 @@ footer {
     background: var(--dark-color);
 }
 
-/* Responsive adjustments for fixed nav */
+
 @media screen and (max-width: 768px) {
     nav {
         padding: 0.5rem;
     }
     
     body {
-        padding-top: 60px; /* Smaller padding for mobile */
+        padding-top: 60px; 
     }
     
     .hero,
@@ -490,7 +488,7 @@ footer {
     }
 }
 
-/* Authentication Styles */
+
 .auth-section {
     padding: 4rem 2rem;
     min-height: calc(100vh - 70px);
@@ -604,7 +602,7 @@ footer {
     background: #4267B2;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2.5rem;
