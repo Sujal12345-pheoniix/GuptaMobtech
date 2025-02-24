@@ -1,4 +1,4 @@
-// Shopping Cart Functionality
+
 let cart = [];
 
 document.querySelectorAll('.add-to-cart').forEach(button => {
@@ -21,13 +21,12 @@ function addToCart(product) {
 }
 
 function updateCartUI() {
-    // Update cart icon or counter
-    // This is a basic implementation
+   
     const cartLink = document.querySelector('a[href="#cart"]');
     cartLink.innerHTML = `<i class="fas fa-shopping-cart"></i> Cart (${cart.length})`;
 }
 
-// Add smooth scrolling for navigation links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -42,15 +41,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Product Filter Functionality
+
 document.querySelectorAll('.filter-btn').forEach(button => {
     button.addEventListener('click', () => {
-        // Remove active class from all buttons
+        
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.classList.remove('active');
         });
         
-        // Add active class to clicked button
+    
         button.classList.add('active');
         
         const category = button.dataset.category;
@@ -75,7 +74,7 @@ function filterProducts(category) {
     });
 }
 
-// Product Rating System
+
 function createRating(rating) {
     const ratingContainer = document.createElement('div');
     ratingContainer.className = 'rating';
@@ -95,19 +94,19 @@ function createRating(rating) {
     return ratingContainer;
 }
 
-// Enhanced Cart Functionality
+
 function updateCartCount() {
     const cartCount = document.querySelector('.cart-count');
     cartCount.textContent = cart.length;
     
-    // Add animation
+
     cartCount.classList.add('animate-bounce');
     setTimeout(() => {
         cartCount.classList.remove('animate-bounce');
     }, 300);
 }
 
-// Product Quick View
+
 function createQuickView(product) {
     const modal = document.createElement('div');
     modal.className = 'quick-view-modal';
@@ -130,7 +129,6 @@ function createQuickView(product) {
     return modal;
 }
 
-// Cart Page Functionality
 function updateCartPage() {
     const cartItems = document.querySelector('.cart-items');
     const emptyMessage = document.querySelector('.empty-cart-message');
@@ -171,15 +169,14 @@ function updateCartSummary() {
     document.querySelector('.total-amount').textContent = `$${total.toFixed(2)}`;
 }
 
-// Contact Form Handling
+
 document.getElementById('contactForm')?.addEventListener('submit', function(e) {
     e.preventDefault();
-    // Add your form submission logic here
     alert('Thank you for your message! We will get back to you soon.');
     this.reset();
 });
 
-// Navigation scroll effect
+
 window.addEventListener('scroll', function() {
     const nav = document.querySelector('nav');
     if (window.scrollY > 100) {
@@ -189,20 +186,20 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Authentication Tab Switching
+
 document.querySelectorAll('.auth-tab').forEach(tab => {
     tab.addEventListener('click', () => {
-        // Remove active class from all tabs and forms
+       
         document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.auth-form').forEach(f => f.classList.remove('active'));
         
-        // Add active class to clicked tab and corresponding form
+
         tab.classList.add('active');
         document.querySelector(`#${tab.dataset.tab}Form`).classList.add('active');
     });
 });
 
-// Login Form Handling
+
 document.getElementById('loginForm')?.addEventListener('submit', function(e) {
     e.preventDefault();
     const email = document.getElementById('loginEmail').value;
@@ -213,7 +210,7 @@ document.getElementById('loginForm')?.addEventListener('submit', function(e) {
     alert('Login functionality to be implemented');
 });
 
-// Signup Form Handling
+
 document.getElementById('signupForm')?.addEventListener('submit', function(e) {
     e.preventDefault();
     const name = document.getElementById('signupName').value;
@@ -225,8 +222,7 @@ document.getElementById('signupForm')?.addEventListener('submit', function(e) {
         alert('Passwords do not match!');
         return;
     }
-    
-    // Add your signup logic here
+
     console.log('Signup attempt:', { name, email, password });
     alert('Signup functionality to be implemented');
 });
